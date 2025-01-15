@@ -1,5 +1,8 @@
 # Comandos útiles en Git
 
+### Para verificar si hay cambios :dash:
+`git status`
+
 ### Inicializar(Una sola vez :cold_sweat:) el repositorio
 `git init`
 

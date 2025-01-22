@@ -37,6 +37,15 @@ function ejemploConst() {
     array = [];
 }
 
+// snake case
+//let mi_perrito_en_el_agua
+
+// camel case
+//let miPerritoEnElAgua
+
+// Pascal Case
+//let MiPerritoEnElAgua
+
 //ejemploVar();
 //ejemploLet();
 ejemploConst();

@@ -21,3 +21,7 @@ function saludo(nombre, apellido, edad) {
 }
 
 //saludo("Agustin Naruto", "ElVerdeGreen", 12);
+
+// Prueba en la consola estos comandos
+// document.getElementsByTagName("p")
+// document.getElementsByTagName("div")

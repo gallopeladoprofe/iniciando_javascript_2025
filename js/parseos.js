@@ -25,3 +25,8 @@ function saludo(nombre, apellido, edad) {
 // Prueba en la consola estos comandos
 // document.getElementsByTagName("p")
 // document.getElementsByTagName("div")
+// document.getElementById("li-frutas")
+
+
+// obtener el nodo lista
+const lista_frutas = document.getElementById("li-frutas");

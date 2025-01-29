@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     console.log(verduras);
     console.log(personas);
+
+    const item1 = document.getElementById('vero');
+    item1.innerText = `${vero.nombre} ${vero.apellido}, su edad es ${vero.edad}`;
 });
 
 function calcularEdad(fechaNacimiento) {

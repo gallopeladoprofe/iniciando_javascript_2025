@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function(){
         , edad: 28
     };
 
+    // estaba muy loco ese día
+    vero.edad = calcularEdad("1991/05/09");
+
     const personas = [vero, ale];
     console.log(personas);
     personas.push(george);
@@ -40,3 +43,25 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(verduras);
     console.log(personas);
 });
+
+function calcularEdad(fechaNacimiento) {
+    //debugger;
+    // Instancia de Date
+    const hoy = new Date();
+    const [anio, mes, dia] = fechaNacimiento.split('/').map(Number);
+    const fechaNac = new Date(anio, mes - 1, dia);
+
+    let edad = hoy.getFullYear() - fechaNac.getFullYear();
+    const mesActual = hoy.getMonth();
+    const diaActual = hoy.getDate();
+
+    // Ajustar si aún no ha pasado el cumpleaños este año
+    if (mesActual < fechaNac.getMonth() || (mesActual === fechaNac.getMonth() && diaActual < fechaNac.getDate())) {
+        edad--;
+    }
+
+    return edad;
+}
+
+// Ejemplo de uso
+//console.log(calcularEdad("1992/10/05")); // Devuelve la edad correcta

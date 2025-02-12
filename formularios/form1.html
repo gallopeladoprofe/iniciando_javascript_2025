@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="../css/estilo_form1.css">
+</head>
 <body>
+    <h1>Formulario 1</h1>
 
-<h1>El elemento input</h1>
+    <form action="">
 
-<form action="">
+        <div class="formulario-de-control">
+            <label for="txtnombres">Nombres:</label>
+            <input type="text" id="txtnombres">
+        </div>
 
-    <div>
-        <label for="txtnombres">Nombres:</label>
-        <input type="text" id="txtnombres">
-    </div>
-
-    <div>
-        <label for="txtapellidos">Apellidos:</label>
-        <input type="text" id="txtapellidos">
-    </div>
-
-
-    <input type="submit" value="Enviar">
-</form>
+        <div class="formulario-de-control">
+            <label for="txtapellidos">Apellidos:</label>
+            <input type="text" id="txtapellidos">
+        </div>
 
 
+        <input type="button" value="Enviar" id="btnEnviar">
+    </form>
+
+    <script src="./form1.js"></script>
 </body>
 </html>

@@ -23,12 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 class Persona {
 
-    constructor(nombres, apellidos, sexo, cedula, fechanac) {
+    constructor(nombres, apellidos, sexo, cedula, fechanac, ciudad) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         //this.sexo = sexo;
         this.cedula = cedula;
         this.fechanac = fechanac;
+        this.ciudad = ciudad;
 
         /* if(sexo === "F") {
             this.sexo = "Femenino";
